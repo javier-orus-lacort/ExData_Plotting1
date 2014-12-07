@@ -6,13 +6,10 @@
 ##      4) Construct the Plot and save that to the PNG file of 480x480 Pixels 
 ##         called "plot3.png"    
 
-## REMARK:
-## Please notice that I have Spanish language setup in my PC and, therefore,
-## "Thursday, Friday, Saturday" in Spanish are "jueves, viernes, sábado". 
-## This is the reason for having in my plots the day references in the 
-## "X" Axis as "ju - vi - Sá" instead of "Thu - Fri - Sat". This is impacting 
-## the Plots 2, 3 and 4
 
+## Set the Local Time to English to get the week days in English
+## This sentence works for RStudio on Windows at least 
+Sys.setlocale("LC_TIME", "English")
 
 ## Variables setup for downloading/unzipping process.
 file_URL <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
